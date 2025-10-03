@@ -17,7 +17,7 @@ const app = express();
 // Middleware
 app.use(express.json()); 
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://resume-shortlist-ai-frontend-cf37.vercel.app/",
     credentials:true,
 }));
 app.use(cookieParser());
