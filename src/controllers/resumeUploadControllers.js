@@ -71,7 +71,7 @@ Reason:...
  
     const newResume = await resumeModel.create({
       user: req.user?._id,
-      resume_name: req.file.fieldname, 
+      resume_name: req.file.originalname, 
       job_desc,
       score,
       feedback: reason,
